@@ -6,6 +6,7 @@ div.vertical-center { position: absolute; top: 50%; left: 50%; transform: transl
 .no-shadow {text-shadow:none;}
 .text-bold {font-weight: bold;}
 .octicon-heart {color: firebrick}
+footer .container {margin-right: 0;}
 
 /* Sticky footer */
 html { position: relative; min-height: 100%; }
