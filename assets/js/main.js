@@ -1,6 +1,19 @@
 var dictionary = [
   { weather:"windy", verb:"blow" },
-  { weather:"cold", verb:"freeze" }
+  { weather:"cold", verb:"freeze" },
+  { weather:"breezy", verb:"blow" },
+  { weather:"sunny", verb:"shine" },
+  { weather:"wet", verb:"wash" },
+  { weather:"snowy", verb:"freeze" },
+  { weather:"frosty", verb:"freeze" },
+  { weather:"icy", verb:"freeze" },
+  { weather:"hot", verb:"melt" },
+  { weather:"foggy", verb:"fog" },
+  { weather:"calm", verb:"bore" },
+  { weather:"mild", verb:"melt" },
+  { weather:"stormy", verb:"frighten" },
+  { weather:"cloudy", verb:"sneak" },
+  { weather:"dull", verb:"sneak" }
 ];
 
 var showJumbotron = function(){
