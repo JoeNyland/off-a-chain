@@ -2,7 +2,6 @@ body {background-color: lightskyblue; text-shadow: 2px 2px #333;}
 div.jumbotron.off-a-chain { display: none; border: 5px solid #efa11d;background-color: #7b5dbf;color: #eee;
     box-shadow: #333 2px 2px; font-family: 'Architects Daughter', cursive; }
 h1 {color: #efa11d;}
-div.vertical-center { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 .no-shadow {text-shadow:none;}
 .text-bold {font-weight: bold;}
 .octicon-heart {color: firebrick}
