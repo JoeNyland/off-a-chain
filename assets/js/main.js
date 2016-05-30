@@ -21,7 +21,7 @@ var addTweetButton = function(twttr,msg) {
   link.setAttribute('href', 'https://twitter.com/share');
   link.setAttribute('class', 'twitter-share-button');
   link.setAttribute('id', 'twitterbutton');
-  link.setAttribute("data-text", "" + msg + "");
+  link.setAttribute("data-text", "" + msg + " -- No one, ever");
   link.setAttribute("data-size", "large");
   link.setAttribute("data-hashtags", "OffAChain");
   var wrapper = document.getElementById('quote-wrapper');
@@ -30,7 +30,7 @@ var addTweetButton = function(twttr,msg) {
 };
 
 var buildQuoteMsg = function(entry) {
-  return "It's so "+entry.weather+" today, you could "+entry.verb+" a dog off a chain! -- No one, ever";
+  return "It's so "+entry.weather+" today, you could "+entry.verb+" a dog off a chain!";
 };
 
 var generateQuote = function() {
