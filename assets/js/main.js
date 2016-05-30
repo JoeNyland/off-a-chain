@@ -16,10 +16,32 @@ var dictionary = [
   { weather:"dull", verb:"sneak" }
 ];
 
-var showJumbotron = function(){
-  $('.jumbotron.off-a-chain').show();
+var addTweetButton = function(twttr,msg) {
+  var link = document.createElement('a');
+  link.setAttribute('href', 'https://twitter.com/share');
+  link.setAttribute('class', 'twitter-share-button');
+  link.setAttribute('id', 'twitterbutton');
+  link.setAttribute("data-text", "" + msg + "");
+  link.setAttribute("data-size", "large");
+  link.setAttribute("data-hashtags", "OffAChain");
+  var wrapper = document.getElementById('quote-wrapper');
+  wrapper.appendChild(link);
+  twttr.widgets.load(wrapper);
 };
 
-var entry = $(dictionary).sort(function(){ return 0.5 - Math.random()}).first()[0];
-$('#weather-adjective').html(entry.weather,showJumbotron());
-$('#dog-verb').html(entry.verb,showJumbotron());
+var buildQuoteMsg = function(entry) {
+  return "It's so "+entry.weather+" today, you could "+entry.verb+" a dog off a chain!";
+};
+
+var generateQuote = function() {
+  return $(dictionary).sort(function(){ return 0.5 - Math.random()}).first()[0];
+};
+
+var msg = buildQuoteMsg(generateQuote());
+document.getElementById('quote').innerHTML = msg;
+$('.jumbotron.off-a-chain').show();
+twttr.ready(
+  function (twttr) {
+    addTweetButton(twttr,msg);
+  }
+);
