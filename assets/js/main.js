@@ -30,7 +30,7 @@ var addTweetButton = function(twttr,msg) {
 };
 
 var buildQuoteMsg = function(entry) {
-  return "It's so "+entry.weather+" today, you could "+entry.verb+" a dog off a chain!";
+  return "It's so "+entry.weather+" today, you could "+entry.verb+" a dog off a chain! -- No one, ever";
 };
 
 var generateQuote = function() {
